@@ -1,0 +1,45 @@
+{
+  "name": "TimeOff.Management",
+  "description": "Simple yet powerful absence management software for small and medium size business",
+  "repository": "https://github.com/timeoff-management/application",
+  "addons": ["heroku-postgresql"],
+  "env": {
+    "ALLOW_CREATE_NEW_ACCOUNTS": {
+      "description": "Allow new business account creation",
+      "value": "true"
+    },
+    "SEND_EMAILS": {
+      "description": "Send email notifications?",
+      "value": "false"
+    },
+    "SENDER_EMAIL": {
+      "description": "Email address of the sender of notification mails",
+      "value": "mail@test.com"
+    },
+    "SMTP_SERVER": {
+      "description": "smtp server address"
+    },
+    "SMTP_PORT": {
+      "description": "smtp server port",
+      "value": "25"
+    },
+    "SMTP_LOGIN": {
+      "description": "smtp server login"
+    },
+    "SMTP_PASSWORD": {
+      "description": "smtp server password"
+    },
+    "CRYPTO_SECRET": {
+      "description": "Secret needed for hashifying passwords",
+      "generator": "secret"
+    },
+    "APPLICATION_DOMAIN": {
+      "description": "Public domain of your application (will be used for links in email notifications)",
+      "value": "http://app.timeoff.management"
+    },
+    "PROMOTION_WEBSITE_DOMAIN": {
+      "description": "Link to landing page of the app",
+      "value": "http://timeoff.management"
+    }
+  }
+}
