@@ -100,6 +100,12 @@ npm start
 ```
 Open http://localhost:3000/ in your browser.
 
+### Host on Heroku
+Click the following button to install TimeOff.Management on Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+
 ## Run tests
 
 We have quite a wide test coverage, to make sure that the main user paths work as expected.
