@@ -4,7 +4,7 @@ module.exports = {
   "application_sender_email"  : process.env.SENDER_EMAIL || "email@test.com",
 
   // transports email via SMTP
-  "email_smtp_transporter" : {
+  "email_transporter" : {
     "host" : process.env.SMTP_SERVER || "localhost",
     "port" : process.env.SMTP_PORT   || 25,
     "auth" : {
