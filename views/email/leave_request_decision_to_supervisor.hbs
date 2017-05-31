@@ -1,7 +1,7 @@
-Leave request decision is made
+Leave request processed
 =====
-<p>Hello <strong>{{#with approver }}{{this.full_name}}{{/with}}</strong>,<p>
+<p>Hello {{#with approver }}{{this.full_name}}{{/with}},<p>
 
-<p>You just processed {{#if was_pended_revoke}}cancellation of {{/if}}leave request {{>leave_request_detail leave=leave }} for {{#with requester}}{{this.full_name}}{{/with}}: to {{action}}.</p>
+<p>You just processed {{#if was_pended_revoke}}cancellation of {{/if}}leave request <i>{{>leave_request_detail leave=leave }}</i> for {{#with requester}}{{this.full_name}}{{/with}}: to {{action}}.</p>
 
-<p>Thanks</p>
+<p>Cheers</p>
