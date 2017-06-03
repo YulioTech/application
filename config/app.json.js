@@ -1,5 +1,6 @@
 module.exports = {
   "allow_create_new_accounts" : process.env.ALLOW_CREATE_NEW_ACCOUNTS || true,
+  "allow_restore"             : process.env.ALLOW_RESTORE || false,
   "send_emails"               : process.env.SEND_EMAILS || false,
   "application_sender_email"  : process.env.SENDER_EMAIL || "email@test.com",
 
